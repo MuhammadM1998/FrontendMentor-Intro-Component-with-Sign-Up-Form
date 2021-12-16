@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Frontend Mentor | Intro Component with Sign-Up Form</title>
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Styles -->
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="./css/normalize.css">
+  <link rel="stylesheet" href="./css/main.css">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <main>
+    <div class="wrapper">
+      <section class="intro">
+        <h1 class="intro__title">Learn to code by watching others</h1>
+        <p class="intro__paragraph">See how experienced developers solve problems in real-time. Watching scripted
+          tutorials is great, but understanding how developers think is invaluable.</p>
+      </section>
+
+      <section class="register">
+        <div class="register__offer shadow-bottom">
+          <h3 class="offer__heading"><span class="offer__heading--bold">Try it free 7 days</span> then
+            $20/mo. thereafter</h3>
+        </div>
+
+        <form class="register__form shadow-bottom">
+          <div class="form__item">
+            <div class="form__field">
+              <input type="text" name="first-name" id="first-name" class="form__input" placeholder="First Name">
+              <div class="form__icon form__icon--hidden"><img src="./images/icon-error.svg" alt="Erorr Icon"></div>
+            </div>
+            <p class="form__warning form__warning--hidden">First Name cannot be empty</p>
+          </div>
+
+          <div class="form__item">
+            <div class="form__field">
+              <input type="text" name="last-name" id="last-name" class="form__input" placeholder="Last Name">
+              <div class="form__icon form__icon--hidden"><img src="./images/icon-error.svg" alt="Erorr Icon"></div>
+            </div>
+
+            <p class="form__warning form__warning--hidden">Last Name cannot be empty</p>
+          </div>
+
+          <div class="form__item">
+            <div class="form__field">
+              <input type="email" name="email" id="email" class="form__input" placeholder="Email Address">
+              <div class="form__icon form__icon--hidden"><img src="./images/icon-error.svg" alt="Erorr Icon"></div>
+            </div>
+
+            <p class="form__warning form__warning--hidden">Looks like this is not an email</p>
+          </div>
+
+          <div class="form__item">
+            <div class="form__field">
+              <input type="password" name="password" id="password" class="form__input " placeholder="Password">
+              <div class="form__icon form__icon--hidden"><img src="./images/icon-error.svg" alt="Erorr Icon"></div>
+            </div>
+
+            <p class="form__warning form__warning--hidden">Password cannot be empty</p>
+          </div>
+
+          <button type="submit" class="form__submit">Claim your free trial</button>
+          <p class="form__terms">By clicking the button, you are agreeing to our <span class="form__terms--red">Terms
+              and Services</span></p>
+        </form>
+      </section>
+    </div>
+  </main>
+
+  <footer class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+    Coded by <a href="https://github.com/MuhammadM1998" target="_blank">Muhammad Mahmoud</a>.
+  </footer>
+  
+  <!-- Scripts -->
+  <script src="./javascript/script.js"></script>
+</body>
+
+</html>
